@@ -1,0 +1,17 @@
+Value INDEX (\d+)
+Value GATEWAY (.*?)
+Value ENDPOINT (.*?)
+Value STATE (.*?)
+Value REGISTRAR (.*?)
+Value USERNAME_CRITERIA (.*?)
+
+Start
+   ^\s*\|\s+(\d+)\s+\|\s+${GATEWAY}\|\s+${ENDPOINT}\|\s+${STATE}\|\s+${REGISTRAR}\|\s+${USERNAME_CRITERIA}\|
+   
+   
+   
+   #^\s*\|\s+${INDEX}\s+\|\s+${GATEWAY}\s+\|\s+${ENDPOINT}\s+\|\s+\s+${STATE}\|\s+${REGISTRAR}\s+\|\s+$USERNAME_CRITERIA
+
+
+
+#(.*?)

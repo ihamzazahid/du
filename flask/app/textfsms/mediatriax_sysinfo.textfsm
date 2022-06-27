@@ -1,0 +1,11 @@
+Value DESCRIPTION (.*)
+Value SERIAL_NUMBER (.*)
+Value FIRMWARE (.*)
+Value MAC_ADDRESS (.*)
+
+Start
+  ^\s*[Ss]ystem\s+[Dd]escription:?\s+${DESCRIPTION}
+  ^\s*[Ss]erial\s+[Nn]umber:?\s+${SERIAL_NUMBER}
+  ^\s*[Ff]irmware\s+[Vv]ersion:?\s+${FIRMWARE}
+  ^\s*[Mm][Aa][Cc]\s+[Aa]ddress:?\s+${MAC_ADDRESS}
+
